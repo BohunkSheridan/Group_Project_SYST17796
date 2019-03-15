@@ -14,12 +14,12 @@ import java.util.ArrayList;
  */
 public abstract class Game 
 {
-    private final String gameName;//the title of the game
+    private final String blackjack;//the title of the game
     private ArrayList <Player> players;// the players of the game
     
-    public Game(String givenName)
+    public Game(String blackjack)
     {
-        gameName = givenName;
+        this.blackjack = blackjack;
         players = new ArrayList();
     }
 
@@ -28,7 +28,7 @@ public abstract class Game
      */
     public String getGameName() 
     {
-        return gameName;
+        return this.blackjack;
     }
     
      /**
