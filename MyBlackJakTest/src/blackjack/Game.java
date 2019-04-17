@@ -15,7 +15,7 @@ public class Game {
     
     public void play()
     {
-        displayRules();
+        
     Deck playingDeck = new Deck();
     playingDeck.createFullDeck();
     playingDeck.shuffle(); 
@@ -24,7 +24,7 @@ public class Game {
     Deck dealerDeck = new Deck();
     
      double playerMoney = 200.0;
-        boolean endRound = false; // for scip round after fail 
+        boolean endRound; // for scip round after fail 
         int response;
         double playerBet;
         
@@ -43,9 +43,7 @@ public class Game {
                  System.out.println("You have $" + playerMoney + " today \n How much would you like to bet?"+"\n");
                  playerBet = userInput.nextDouble();
              }
-             
-             
-             
+                    
              playerDeck.draw(playingDeck); // take 2 cards for the player
              playerDeck.draw(playingDeck);
              
