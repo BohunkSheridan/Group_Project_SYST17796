@@ -23,6 +23,8 @@ public class Game {
     Deck playerDeck = new Deck();
     Deck dealerDeck = new Deck();
     
+     System.out.println("Shuffling the Deck");
+        
      double playerMoney = 200.0;
         boolean endRound = false; // for scip round after fail 
         int response;
@@ -62,7 +64,7 @@ public class Game {
                  System.out.println("\nDealers cards are: " + "\n\n" + dealerDeck.getCard(0).toString()
                          + " \n\n\t\t\t ♠ ♥ ♣ ♦ {^Guess WHAT?^} ♠ ♥ ♣ ♦ \n");
                  
-                 //Time to choice
+                 //User has to make a choice
                  System.out.println("\t Press '0' to Stay with your Cards \n\t\t or 1' to Take one more: ");
                  response = userInput.nextInt();
                  
@@ -75,7 +77,7 @@ public class Game {
                      if (playerDeck.cardsValue()>21)
                      {
                          System.out.println("\n\t Value of cards: " + playerDeck.cardsValue() + " points");
-                         System.out.println("You loose your $"+playerBet);
+                         System.out.println("You lose your $"+playerBet);
                          playerMoney -= playerBet;
                          endRound = true;
                          break;                                                                                                                                                                                                                                                                                                                                                                                                                     
