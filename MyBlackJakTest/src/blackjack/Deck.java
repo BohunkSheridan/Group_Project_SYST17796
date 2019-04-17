@@ -35,7 +35,7 @@ public class Deck {
         }
             
     }
-    public void shuffle()
+    public void shuffle() //Shuffles the deck by creating a blank array which stores cards of random indexes within a range 
     {
         ArrayList<Card> tmpDeck = new ArrayList<Card>();
         Random random = new Random();
@@ -51,11 +51,11 @@ public class Deck {
         
     }
     
-    public void removeCard(int i)
+    public void removeCard(int i) //Removes Card from deck when Player or Dealer draw the card
     {
         this.cards.remove(i);
     }
-    public Card getCard(int i)
+    public Card getCard(int i) //Calling the Cards value
     {
         return this.cards.get(i);
     }
@@ -64,7 +64,7 @@ public class Deck {
          this.cards.add(addCard);
      }
      
-     public void draw(Deck comingFrom)
+     public void draw(Deck comingFrom) //draws a card from deck specified as paramater
      {
          this.cards.add(comingFrom.getCard(0));
          comingFrom.removeCard(0);
