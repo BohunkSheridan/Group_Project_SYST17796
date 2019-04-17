@@ -5,8 +5,6 @@
  */
 package blackjack;
 
-import java.util.Scanner;
-
 /**
  *
  * @author bohunk
@@ -17,6 +15,7 @@ public class BlackJackMain {
     {       
         Game game = new Game();
         
+        game.displayRules();
         game.play();
        
          System.out.println("\n" + "<> Game is over! <>");
