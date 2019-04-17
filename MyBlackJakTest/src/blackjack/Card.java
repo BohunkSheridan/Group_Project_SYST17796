@@ -25,7 +25,7 @@ public class Card {
     private Suit suit;
     private Value value;
     
-    public Card( Suit suit, Value value)
+    public Card( Suit suit, Value value) //Constructs card object with a value and suit as per the enumerated types from above
     {
         this.value=value;
         this.suit=suit;
