@@ -45,7 +45,7 @@ public class Game {
                  System.out.println("You have $" + playerMoney + " today \n How much would you like to bet?"+"\n");
                  playerBet = userInput.nextDouble();
              }
-             
+              System.out.println("Ok you can Bet "+playerBet+"$");
              
              
              playerDeck.draw(playingDeck); // take 2 cards for the player
@@ -84,7 +84,11 @@ public class Game {
                          
                      }
                  }
-                 if(response == 0)
+                 else if(response > 1 )
+                 {
+                     System.out.println("Please choose correct option");
+                 }
+                 else //if (response == 0)
                  {
                      break;
                  }
