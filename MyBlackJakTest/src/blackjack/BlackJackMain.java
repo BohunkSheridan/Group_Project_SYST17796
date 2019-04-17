@@ -11,7 +11,8 @@ import java.util.Scanner;
  *
  * @author bohunk
  */
-public class BlackJackMain {
+public class BlackJackMain { //Calls for new creation of game object which is needed for execution in the Game class
+
     
     public static void main(String args[])
     {       
